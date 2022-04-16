@@ -1,0 +1,28 @@
+.repo-section {
+  height: 900px;
+  background: linear-gradient( #412A60, #7B3146, #0371AC);
+}
+
+/* Header Section */
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.horizontal {
+  width: 15px;
+  margin: 15px;
+  height: 3px;
+  border: none;
+  background: white;
+}
+
+h3 {
+  color: white;
+  font-family: 'Charm', cursive;
+  font-size: 30px;
+  letter-spacing: 1.0px;
+  font-weight: bold;
+}
