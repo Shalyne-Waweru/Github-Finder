@@ -81,3 +81,22 @@ input[type="search"]:focus {
   border-color: #1183d6;
   outline: none;
 }
+
+/* Info Section */
+.container {
+  height: 600px;
+  width: 900px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-width: 35px;
+  border-style: solid;
+  border-image: linear-gradient( #412A60, #7B3146, #0371AC) 1;
+}
+
+.left {
+  
+}
+
+.right {
+  
+}
