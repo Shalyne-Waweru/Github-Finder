@@ -85,7 +85,7 @@ input[type="search"]:focus {
 /* Info Section */
 .container {
   height: 600px;
-  width: 900px;
+  width: 1000px;
   margin-top: 50px;
   margin-bottom: 50px;
   border-width: 35px;
@@ -93,10 +93,41 @@ input[type="search"]:focus {
   border-image: linear-gradient( #412A60, #7B3146, #0371AC) 1;
 }
 
+/* Left Column */
 .left {
-  
+  border-right: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 530px;
 }
 
+.profile-img {
+  height: 300px;
+  width: 300px;
+  border: 10px solid #412A60;
+  border-radius: 100%;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.left button {
+  margin-top: 40px;
+  height: 50px;
+  width: 200px;
+  font-family: 'Charm', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+button i {
+  text-indent: 20px;
+}
+
+/* Right Column */
 .right {
   
 }
