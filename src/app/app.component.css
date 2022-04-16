@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+.h-background {
+  background-image: url(../assets/home-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.intro {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 40%;
+  position: relative;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 65px;
+}
+
+.charm {
+  font-family: 'Charm', cursive;
+  font-weight: 100;
+}
+
+.intro p {
+  font-size: 25px;
+  line-height: 1.6;
+  margin-top: -30px;
+}
+
+hr {
+  margin-top: 400px;
+  width: 100px;
+}
