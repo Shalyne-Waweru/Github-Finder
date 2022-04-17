@@ -79,3 +79,66 @@ h3 {
   font-size: 20px;
   letter-spacing: 1px;
 }
+
+/* GitHub Tip Section */
+.git-tip {
+  height: 300px;
+}
+
+.git-tip p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.blueHeader {
+  margin-top: 20px;
+  color: #0371AC;
+}
+
+.blueHorizontal {
+  width: 15px;
+  margin: 15px;
+  height: 3px;
+  border: none;
+  background: #0371AC;
+}
+
+/* Footer Section */
+.footer {
+  height: 130px;
+  background-color: #412A60;
+}
+
+.fa {
+  margin-top: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 30px;
+  color: white;
+}
+
+.fa:hover {
+    color: #8EC5FC;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.footer hr{
+  height: 2px;
+  width: 15%;
+  margin-left: 42%;
+  color: white;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
