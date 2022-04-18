@@ -109,7 +109,7 @@ input[type="search"]:focus {
   border: 10px solid #412A60;
   border-radius: 100%;
   margin-top: 10px;
-  padding: 20px;
+  padding: 1px;
 }
 
 .left button {
@@ -121,6 +121,14 @@ input[type="search"]:focus {
   font-weight: bold;
   border-radius: 5px;
   background-color: transparent;
+}
+
+button a {
+  color: black;
+}
+
+button a:visited {
+  color: black;
 }
 
 button i {

@@ -15,8 +15,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 left">
-        <img class="profile-img" src="../../assets/person-icon.png">
-        <button>LEARN MORE<i class="fa fa-github"></i></button>
+        <img class="profile-img" src={{user.avatar_url}}>
+        <button><a href={{user.html_url}}>LEARN MORE</a><i class="fa fa-github"></i></button>
       </div>
 
       <div class="col-md-6 right">
@@ -24,31 +24,31 @@
           <div class="details">
             <img src="../../assets/person-icon.png">
             <p>Github Username : </p>
-            <p><strong class="blue">Shalyne-Waweru</strong></p>
+            <p><strong class="blue">{{user.login}}</strong></p>
           </div>
 
           <div class="details">
             <img src="../../assets/followers-icon.png">
             <p>Followers : </p>
-            <p><strong class="blue">10</strong></p>
+            <p><strong class="blue">{{user.followers}}</strong></p>
           </div>
 
           <div class="details">
             <img src="../../assets/following-icon.png">
             <p>Following : </p>
-            <p><strong class="blue">15</strong></p>
+            <p><strong class="blue">{{user.following}}</strong></p>
           </div>
 
           <div class="details">
             <img src="../../assets/folders-icon.png">
             <p>No. of Repositories : </p>
-            <p><strong class="blue">30</strong></p>
+            <p><strong class="blue">{{user.public_repos}}</strong></p>
           </div>
 
           <div class="details">
             <img src="../../assets/date-icon.png">
             <p>Joined on : </p>
-            <p><strong class="blue">Apr 10 2022</strong></p>
+            <p><strong class="blue">{{user.created_at|date}}</strong></p>
           </div>
 
           <button class="purpleBtn">SHOW REPOSITORIES</button>
