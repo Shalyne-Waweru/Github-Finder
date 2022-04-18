@@ -1,4 +1,4 @@
-export class Profile {
+export class User {
   //Here we make Angular sieve out what we need from the API
   constructor(
     public avatar_url:string,
