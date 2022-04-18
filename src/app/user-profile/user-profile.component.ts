@@ -10,12 +10,36 @@ import { User } from '../user-class/user'; // Import the User blueprint where we
 })
 export class UserProfileComponent implements OnInit {
  
-  constructor() { 
+  //1. Create a property 'user' and assign it the type of our 'User' class
+  user: User;
+
+  errorMsg:string;
+
+  //2. Inject a private http property of the type HttpClient in the constructor. 
+  constructor(private http:HttpClient) { 
 
   }
 
   getProfile(username:string){
-    alert(username);
+    //3. Create an interface to inform Angular the kind of response we'll receive from the API
+    interface ApiResponse{
+      avatar_url:string,
+      html_url:string,
+      login:string,
+      followers:number,
+      following:number,
+      public_repos:number,
+      created_at:Date
+    }
+
+    this.http.get<ApiResponse>(environment.apiUrl + 'users/' + username).subscribe(data=>{
+      // Succesful API request
+      this.user = new User(data.avatar_url, data.html_url, data.login, data.followers, data.following, data.public_repos, data.created_at)
+    },
+    //Failed API request
+    error =>{
+      this.errorMsg = "An error has occurred!";
+    });
   }
 
   ngOnInit() {
