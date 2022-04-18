@@ -29,7 +29,7 @@ h3 {
 }
 
 /* Search Form */
-form {
+.search-section {
   color: black;
   display: flex;
   padding: 2px;
@@ -59,7 +59,7 @@ input[type="search"]::placeholder {
   color: rgb(93, 91, 91);
 }
 
-button[type="submit"] {
+button[type="button"] {
   text-indent: -999px;
   overflow: hidden;
   width: 40px;

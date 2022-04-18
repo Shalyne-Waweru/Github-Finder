@@ -6,10 +6,10 @@
   </div>
 
   <!-- Search Section -->
-  <form class="search-section">
-    <input type="search" id="username" placeholder="Enter Github Username" required>
-    <button type="submit">Search</button>
-  </form>
+  <div class="search-section">
+    <input type="search" id="username" placeholder="Enter Github Username" #search required>
+    <button type="button" (click)="getProfile(search.value)">Search</button>
+  </div>
 
   <!-- Info Section -->
   <div class="container">
