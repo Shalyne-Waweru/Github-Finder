@@ -1,5 +1,5 @@
 <div class="profile-section">
-  <div class="section-header">
+  <div class="profile-section-header">
     <hr class="horizontal">
     <h3>User's Info</h3>
     <hr class="horizontal">
@@ -12,7 +12,7 @@
   </div>
 
   <!-- Info Section -->
-  <div class="container">
+  <div class="container" id="container">
     <div class="row">
       <div class="col-md-6 left">
         <img class="profile-img" src={{user.avatar_url}}>
@@ -51,8 +51,32 @@
             <p><strong class="blue">{{user.created_at|date}}</strong></p>
           </div>
 
-          <button class="purpleBtn">SHOW REPOSITORIES</button>
+          <button (click)="getRepos(search.value)" class="purpleBtn">SHOW REPOSITORIES</button>
         </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+<!-- Repositories Section -->
+<div class="repo-section">
+  <div class="repo-section-header">
+    <hr class="horizontal">
+    <h3>User's Repositories</h3>
+    <hr class="horizontal">
+  </div>
+
+  <div class="container">
+    <div class="row" id="row">
+      <div class="col-md-3" *ngFor="let repo of repos">
+        <p class="repo-name">{{repo.name}}</p>
+        <p class="repo-desc">Repository Description</p>
+        <p class="desc">{{repo.description}}</p>
+
+        <button class="blueBtn"><a href={{repo.html_url}}>VIEW REPOSITORY</a></button>
       </div>
     </div>
   </div>
