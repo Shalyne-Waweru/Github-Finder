@@ -1,0 +1,43 @@
+.nav {
+  height: 80px;
+  background-color: #000000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  margin-right: 150px;
+}
+
+.nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+/* Home Nav Button */
+.home {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.home:hover {
+  border: 1px solid #7B3146;
+}
+
+/* Search Nav Button */
+.search {
+  background-color: transparent;
+  border: none;
+}
+
+.search:hover {
+  border: 1px solid #7B3146;
+}
