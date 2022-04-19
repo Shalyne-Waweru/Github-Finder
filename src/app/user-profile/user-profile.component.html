@@ -71,7 +71,7 @@
 
   <div class="container">
     <div class="row" id="row">
-      <div class="col-md-3" *ngFor="let repo of repos">
+      <div class="col-md-3" *ngFor="let repo of repos" appHoverColor>
         <p class="repo-name">{{repo.name}}</p>
         <p class="repo-desc">Repository Description</p>
         <p class="desc">{{repo.description}}</p>

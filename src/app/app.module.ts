@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FooterComponent } from './footer/footer.component';
 import { DateCountPipe } from './date-count.pipe';
+import { HoverColorDirective } from './hover-color.directive';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { DateCountPipe } from './date-count.pipe';
     UserProfileComponent,
     FooterComponent,
     DateCountPipe,
+    HoverColorDirective,
   ],
   imports: [
     BrowserModule,
