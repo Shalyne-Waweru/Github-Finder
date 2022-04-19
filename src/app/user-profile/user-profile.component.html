@@ -79,6 +79,7 @@
           <p>UPDATED AT: </p>
           <p class="desc"><strong>{{repo.updated_at|date}}</strong></p>
         </div>
+        <p>This was <span class="blueText">{{repo.updated_at|dateCount}}</span> days ago.</p>
       
         <button class="blueBtn"><a href={{repo.html_url}}>VIEW REPOSITORY</a></button>
       </div>

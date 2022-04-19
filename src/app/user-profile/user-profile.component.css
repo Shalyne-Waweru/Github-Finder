@@ -255,6 +255,11 @@ button i {
   align-items: center;
 }
 
+.blueText {
+  font-weight: bold;
+  color: #0371AC;
+}
+
 .blueBtn {
   margin-top: 30px;
   width: 250px;
