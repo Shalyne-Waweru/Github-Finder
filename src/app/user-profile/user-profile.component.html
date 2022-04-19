@@ -75,7 +75,11 @@
         <p class="repo-name">{{repo.name}}</p>
         <p class="repo-desc">Repository Description</p>
         <p class="desc">{{repo.description}}</p>
-
+        <div class="date">
+          <p>UPDATED AT: </p>
+          <p class="desc"><strong>{{repo.updated_at|date}}</strong></p>
+        </div>
+      
         <button class="blueBtn"><a href={{repo.html_url}}>VIEW REPOSITORY</a></button>
       </div>
     </div>
