@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FooterComponent } from './footer/footer.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
     FooterComponent,
+    DateCountPipe,
   ],
   imports: [
     BrowserModule,
