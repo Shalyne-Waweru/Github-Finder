@@ -5,13 +5,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { UserReposComponent } from './user-repos/user-repos.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
-    UserReposComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
