@@ -33,6 +33,30 @@
   margin-top: 10px;
 }
 
+.searchBtn {
+  margin-top: 30px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0371AC;
+  color: white;
+  font-family: 'Charm', cursive;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.searchBtn a {
+  color: white;
+  text-decoration: none;
+}
+
+.searchBtn a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 hr {
   margin-top: 450px;
   height: 5px;
