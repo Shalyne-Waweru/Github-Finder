@@ -34,7 +34,7 @@ export class UserProfileComponent implements OnInit {
       created_at:Date
     }
 
-    this.http.get<ApiResponse>('https://api.github.com/'+ 'users/' + username).subscribe(data=>{
+    this.http.get<ApiResponse>(environment.apiUrl + 'users/' + username).subscribe(data=>{
       // Succesful API request
       this.user = new User(data.avatar_url, data.html_url, data.login, data.followers, data.following, data.public_repos, data.created_at)
     })
@@ -48,7 +48,7 @@ export class UserProfileComponent implements OnInit {
       html_url:string
     }
 
-    this.http.get<RepoApiResponse>('https://api.github.com/' + 'users/' + username + '/repos').subscribe((repos:any) =>{
+    this.http.get<RepoApiResponse>(environment.apiUrl + 'users/' + username + '/repos').subscribe((repos:any) =>{
       // Succesful API request   
       this.repos = repos;
     },
